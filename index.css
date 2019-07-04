@@ -78,9 +78,9 @@ text-align: center;
     font-size: 35px;
     color: #757575;
 }
-.icon-fangdajing{
+/* .icon-fangdajing{
     text-align: center;
-}
+} */
 .input-find:hover .icon-fangdajing{
     color: #fff;
     background-color: #ff6700;
@@ -186,20 +186,33 @@ box-sizing: border-box;
     top: 0;
     right: 0;
 }
-.input-find .icon-fangdajing{
-    position: absolute;
-    top: -6px;
-    left:-1px;
-}
+ .input-find .icon-fangdajing{
+    display: block;
+    width: 16px;
+    height: 16px;
+    font-size: 24px;
+    line-height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 9px;
+    margin-left:4px ;
+
+} 
+/* .input-find i{
+    display: block;
+    line-height: 50px;
+    text-align: center;
+} */
 .banner-input:hover input{
-    border-color: #ff6700;
+    border-color: #333333;
 }
 .banner-input:hover .input-find{
-    border-color: #ff6700;
+    border-color: #333;
 
 }
 .input-find:hover{
 background-color: #ff6700;
+border: #333 solid 0;
 } 
  .banner-logo i{
     color: #f2f2f2;
@@ -218,13 +231,18 @@ background-color: #ff6700;
         height: 69px;
         /* color: #757575; */
         font-size: 14px;
-        background-color: #e0e0e0;
+        /* background-color: #e0e0e0; */
         position: absolute;
         left: 234px;
-        top: 200px;
+        /* top: 200px; */
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
         z-index: 77;
     }
     .jiantou .icon-zuojiantou{
+        color: #e0e0e0;
         font-size: 30px;
         position: absolute;
         left: 0;
@@ -235,13 +253,17 @@ background-color: #ff6700;
         height: 69px;
         /* color: #757575; */
         font-size: 14px;
-        background-color: #e0e0e0;
+        /* background-color: #e0e0e0; */
         position: absolute;
-       right: 0;
-        top: 200px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
         z-index: 77;
     }
     .jiantou1 .icon-iconfontjiantou5{
+        color: #e0e0e0;
         font-size: 30px;
         position: absolute;
         left: right;
@@ -568,10 +590,17 @@ color: #ffffff;
 }
 
 
+.video-list .icon-play{
+    width: 36px;
+    height: 24px;
+    font-size: 40px;
+    position: absolute;
+    top: 130px;
+    left: 30px;
+}
 
 
-
-.video-img .icon-play{
+.video-list1 .icon-play{
     width: 36px;
     height: 24px;
     font-size: 40px;
@@ -1189,7 +1218,7 @@ margin: 0 auto;
     height: 58px;
     color: #333333;
     font-size: 22px;;
-    line-height: 40px;
+    line-height: 58px;
     float: left;
 }
 .recommend .jt{
@@ -1234,7 +1263,7 @@ margin: 0 auto;
 .foryou .flist{
     width: 4960px;
     height: 314px;
-    background-color: #fff;
+    background-color: #f5f5f5;
     /* overflow: hidden; */
 }
 .foryou .fory{
@@ -1299,7 +1328,7 @@ margin: 0 auto;
 .hotbox{
 width: 1226px;
 height: 415px;
-background-color: #fff;
+background-color: #f5f5f5;
 margin: 0px auto;
 }
 .hotbox-list{
@@ -1373,7 +1402,7 @@ height: 19px;
 .re-box-list{
     width: 1226px;
     height: 420px;
-    background: #fff;
+    background: #f5f5f5;
     margin: 0px auto;
     text-align: center;
     
@@ -1409,9 +1438,10 @@ position: relative;
     margin: 0px auto;
     /* background-color: #424242 ; */
 }
-.rtitle1{
+ .re-box ul .rtitle1{
     width: 256px;
     height: 25px;
+    font-weight: 100px;
     color: #333333;
     font-size: 20px;
     text-align: center;
@@ -1447,7 +1477,7 @@ position: relative;
 .video{
     width: 1226px;
     height: 285px;
-    background: #fff;
+    background: #f5f5f5;
     padding-bottom: 60px; 
     /* -moz-box-sizing: border-box; */
 }
@@ -1468,11 +1498,15 @@ position: relative;
     width: 296px;
     height: 180px;
 }
+.video-list-img:hover .icon-play{
+    color: #ff6700;
+}
 .video .video-list .video-list-title{
     width: 296px;
     height: 21px;
     font-size: 14px;
-    counter-reset: black;
+    counter-reset: red
+;
     margin: 10px 0px 6px 0px;
     text-align: center;
 }
@@ -1542,23 +1576,33 @@ position: relative;
         z-index: 77;
     } */
     .ccc{
-        width: 41px;
+        width: 30px;
         height: 69px;
         background-color: #fff;  
         position: absolute;
-        top:210px;
-        left: 0;
+        /* top:210px;
+        left: 0; */
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
         font-size: 30px;
         color: #fff;
     }
     .ccc1{
         font-size: 30px;
-        width: 41px;
+        width: 30px;
         height: 69px;
         background-color: #fff;  
+        color: #fff;
         position: absolute;
-        top:210px;
         right: 0;
+        /* top:210px;
+        right: 0; */
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     .re-box ul .ccc:hover{
         background-color: rgba(66, 66, 66, 0.6);  
@@ -1606,7 +1650,7 @@ position: relative;
 .all{
     height: 100%;
     width: 100%;
-    background: #fff;
+    background: #f5f5f5;
     z-index: 0;
 }
 .bottom1{
